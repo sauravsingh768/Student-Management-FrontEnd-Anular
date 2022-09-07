@@ -1,0 +1,50 @@
+<br>
+<div class = "container">  
+
+  
+  Enter student Id
+  <div class="col">
+    <input type="number" class="form-control" placeholder="id" 
+     [(ngModel)]=id >
+  </div>
+  <br>
+  
+  
+<br>  
+    <button class="btn btn-primary"  type="button" (click)="getStudentById(id)">
+      Seach Student Student</button>
+ 
+  
+</div>
+
+  <br>  
+
+
+  
+
+
+  <div class="container py-5">
+    <h3 class="text-center text-uppercase">List of Student</h3>
+    <table class="table table-bordered table-striped tableclr">
+      <thead>
+        <tr class="text-center text-uppercase">
+          <th>Student Id</th>
+          <th>Name</th>
+          <th>Standard</th>
+          <th>Date Of Birth</th>              
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr >
+          <td>{{student.sid}}</td>
+          <td>{{student.name}}</td>
+          <td>{{student.classNo}}</td>
+          <td>{{student.dob}}</td>
+          
+         
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>

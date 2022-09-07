@@ -1,0 +1,26 @@
+
+<br>
+
+  <div class="container py-5 tableclr">
+    <h3 class="text-center text-uppercase">List of Student</h3>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr class="text-center text-uppercase">
+          <th>Student Id</th>
+          <th>Name</th>
+          <th>Standard</th>
+          <th>Date Of Birth</th>       
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of students;">
+          <td>{{s.sid}}</td>
+          <td>{{s.name}}</td>
+          <td>{{s.classNo}}</td>
+          <td>{{s.dob}}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
